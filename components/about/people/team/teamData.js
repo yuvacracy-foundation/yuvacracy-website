@@ -16,7 +16,7 @@ import {
   seliya,
   gayathriPardeshi,
   jyotsanaSingh,
-  ashishMishra
+  ashishMishra,
 } from "@/public/assetManager";
 
 const boardOfDirectorData = [
@@ -73,7 +73,6 @@ const teamHeadData = [
   },
 ];
 
-
 const techTeamData = [
   {
     name: "Salagala Eliya",
@@ -105,7 +104,7 @@ const ycprTeamData = [
   {
     name: "Srishtistuti Roy",
     socials: {
-      linkedin: "https://www.linkedin.com/in/srishtistuti-r-883b73266/",
+      linkedin: "https://www.linkedin.com/in/ss-roy-883b73266/",
     },
     position: "Policy Researcher",
     images: [{ src: srishtistutiRoy }],
@@ -174,5 +173,11 @@ const socialMediaGraphicsTeam = [
   },
 ];
 
-
-export { boardOfDirectorData, teamHeadData, techTeamData, ycprTeamData, yclaTeamData, socialMediaGraphicsTeam }
+export {
+  boardOfDirectorData,
+  teamHeadData,
+  techTeamData,
+  ycprTeamData,
+  yclaTeamData,
+  socialMediaGraphicsTeam,
+};
