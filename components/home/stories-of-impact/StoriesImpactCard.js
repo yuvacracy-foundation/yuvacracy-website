@@ -14,7 +14,7 @@ const StoriesImpactCard = ({ data }) => {
             {data.headline}
           </h2>
         </div>
-        <p className=" font-openSans text-subheading lg:text-[.98rem] text-[.85rem] md_phone:line-clamp-0 line-clamp-[8] ">
+        <p className=" font-openSans text-subheading text-justify lg:text-[.98rem] text-[.85rem] md_phone:line-clamp-0 line-clamp-[8] ">
           {data.desc}
         </p>
 
