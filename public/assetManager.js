@@ -74,6 +74,10 @@ import gayathriPardeshi from "./assets/about/people/team/gayatri-pardeshi.png";
 import ashishMishra from "./assets/about/people/team/ashish-mishra.jpg";
 import jyotsanaSingh from "./assets/about/people/team/jyotsana-singh.jpg";
 
+import himanshuKumar from "./assets/home/stories-of-impact/himanshu-kumar.jpeg";
+import krishJha from "./assets/home/stories-of-impact/krish-jha.jpeg";
+import hardikaGupta from "./assets/home/stories-of-impact/hardika-gupta.jpeg";
+
 export {
   HeroImage,
   ProjectUnderConstruction,
@@ -147,4 +151,7 @@ export {
   gayathriPardeshi,
   ashishMishra,
   jyotsanaSingh,
+  himanshuKumar,
+  krishJha,
+  hardikaGupta,
 };
