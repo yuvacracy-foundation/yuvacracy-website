@@ -32,7 +32,7 @@ const StoriesImpactCard = ({ data }) => {
         <Image
           src={data.images && data.images[0].src}
           alt={data.headline}
-          className=" w-[25rem] h-[25rem] pointer-events-none select-none md:p-4"
+          className=" w-[25rem] h-[25rem] pointer-events-none select-none rounded-xl"
         />
       </div>
     </div>
