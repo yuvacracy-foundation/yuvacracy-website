@@ -19,7 +19,7 @@ const storiesOfImpactData = [
   },
   {
     headline: "Himanshu Kumar",
-    desc: "I’m incredibly grateful to have been part of the Fundamentals of Research wprkshop organized by YCPR, the policy wing of the YuvaCracy Foundation, on January 5th, 2025. This workshop was a fantastic opportunity to learn and dive deeper into the technical aspects of research. Thank you to the YuvaCracy Foundation for organizing such an enriching experience.",
+    desc: "I’m incredibly grateful to have been part of the Fundamentals of Research workshop organized by YCPR, the policy wing of the YuvaCracy Foundation, on January 5th, 2025. This workshop was a fantastic opportunity to learn and dive deeper into the technical aspects of research. Thank you to the YuvaCracy Foundation for organizing such an enriching experience.",
     userName: "himanshu-kumar",
     slug: "https://www.linkedin.com/posts/himanshu-kumar-7a9192215_policyinterns-policyresearch-legalresearch-activity-7282045167166017537-Ji6R?utm_source=share&utm_medium=member_android&rcm=ACoAACvb66sBLXBaZPBTWyfVtbmtbMaoohjt8Fs",
     images: [
