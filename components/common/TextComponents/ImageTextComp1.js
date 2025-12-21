@@ -88,7 +88,7 @@ const ImageTextComp1 = ({
           </div>
 
           <div className="md:w-[50%] w-full flex md:justify-end justify-center order-2 items-start md:order-none">
-            <div className="overflow-hidden md:ml-4 rounded-xl">
+            <div className="my-auto overflow-hidden md:ml-4 rounded-xl ">
               <Image
                 alt="YuvaCracy is a foundation for Youth"
                 className="md:w-[28rem] object-contain"
