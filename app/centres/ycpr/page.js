@@ -6,7 +6,7 @@ import {
   YcprNiti,
   YcprCollab,
   YcprLeg,
-  PeopleGroup1,
+  PeopleGroup2,
 } from "@/public/assetManager";
 import SuspenseHandler from "@/utils/SuspenseHandler";
 import ScrollHandler from "@/utils/ScrollHandler";
@@ -154,7 +154,7 @@ const Ycpr = () => {
           subtitle={""}
           mirror={true}
           desc={""}
-          imgSrc={PeopleGroup1}
+          imgSrc={PeopleGroup2}
           data={DevelopmentData2}
           bullet={true}
           imgX="w-[32rem]"
