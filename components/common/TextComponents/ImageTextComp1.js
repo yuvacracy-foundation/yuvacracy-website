@@ -28,11 +28,13 @@ const ImageTextComp1 = ({
       {mirror ? (
         <div className="w-full md:flex">
           <div className="md:w-[50%] w-full flex md:mr-4 md:justify-start order-2 md:order-none">
-            <Image
-              alt="YuvaCracy is a foundation for Youth"
-              className={`${imgX} ${imgY} object-cover`}
-              src={imgSrc}
-            />
+            <div className="overflow-hidden rounded-xl">
+              <Image
+                alt="YuvaCracy is a foundation for Youth"
+                className={`${imgX} ${imgY} object-cover`}
+                src={imgSrc}
+              />
+            </div>
           </div>
 
           <div
@@ -85,12 +87,14 @@ const ImageTextComp1 = ({
             )}
           </div>
 
-          <div className="md:w-[50%] w-full flex md:justify-end justify-center order-2 md:order-none">
-            <Image
-              alt="YuvaCracy is a foundation for Youth"
-              className="md:w-[28rem] md:ml-4 object-contain"
-              src={imgSrc}
-            />
+          <div className="md:w-[50%] w-full flex md:justify-end justify-center order-2 items-start md:order-none">
+            <div className="overflow-hidden md:ml-4 rounded-xl">
+              <Image
+                alt="YuvaCracy is a foundation for Youth"
+                className="md:w-[28rem] object-contain"
+                src={imgSrc}
+              />
+            </div>
           </div>
         </div>
       )}
