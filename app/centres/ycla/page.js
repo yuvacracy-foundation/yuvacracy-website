@@ -188,7 +188,7 @@ const Ycla = () => {
         </div>
 
         <ImageTextComp1
-          title={"Internship Program"}
+          title={"Vidhi Internship Program"}
           subtitle={""}
           imgSrc={YclaIntern}
           customTextStyle="md:pt-12"
