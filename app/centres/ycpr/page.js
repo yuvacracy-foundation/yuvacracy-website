@@ -90,8 +90,9 @@ const DevelopmentData4 = [
     title: "",
     desc: (
       <span>
-        <span className="font-bold">Constitutional Adherence:</span> The
-        constitutional adherence of judgments.
+        <span className="font-bold">Academic MoUs:</span> Partnerships with
+        universities and law schools for joint legal and policy research,
+        faculty–student collaborations and co-published outputs.
       </span>
     ),
   },
@@ -99,8 +100,9 @@ const DevelopmentData4 = [
     title: "",
     desc: (
       <span>
-        <span className="font-bold">Judicial-People Interface:</span> The
-        interplay between the judiciary's role and the people's mandate.
+        <span className="font-bold">Think Tank Collaborations:</span> Joint
+        initiatives with national and international think tanks to produce
+        policy briefs, working papers, Co-hosting conferences etc.
       </span>
     ),
   },
@@ -108,8 +110,19 @@ const DevelopmentData4 = [
     title: "",
     desc: (
       <span>
-        <span className="font-bold">Legal & Parliamentary Gaps:</span> Gaps and
-        loopholes in the legal and parliamentary framework.
+        <span className="font-bold">Legislative & Governance Research:</span>{" "}
+        Issue-based research support for legislators and public institutions,
+        including legislative briefs and comparative law studies.
+      </span>
+    ),
+  },
+  {
+    title: "",
+    desc: (
+      <span>
+        <span className="font-bold">Capacity Building & Training:</span>{" "}
+        Co-designed workshops, research labs and training programmes on law,
+        public policy and legislative analysis.
       </span>
     ),
   },
