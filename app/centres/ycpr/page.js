@@ -1,29 +1,55 @@
 "use client";
 import React from "react";
 import CentreLayout from "../Layout";
-import SubHead from "@/components/common/SubHeadings/SubHead";
 import ImageTextComp1 from "@/components/common/TextComponents/ImageTextComp1";
 import { MeetingImg, PeopleGroup1, PeopleGroup2 } from "@/public/assetManager";
-import ImageTextCustomTitle from "@/components/common/TextComponents/ImageTextCustomTitle";
 import SuspenseHandler from "@/utils/SuspenseHandler";
 import ScrollHandler from "@/utils/ScrollHandler";
+import CustomTitle from "@/components/docs/CustomTitle";
 
 const DevelopmentData = [
   {
-    title: "Dedicated Legislative Assistants: ",
-    desc: "We assign trained professionals to support MPs, working from their Delhi offices or constituencies as needed.",
+    title: "",
+    desc: (
+      <div className="flex flex-row items-center h-3">
+        <div className="mr-2 -mt-1 text-4xl">&#8226;</div>
+        Engage interns in hands-on public policy research, including drafting
+        policy proposals, analytical notes, and governance briefs under expert
+        guidance.
+      </div>
+    ),
   },
   {
-    title: "Parliamentary Work Support: ",
-    desc: "From drafting questions to preparing speeches, we assist with all aspects of parliamentary proceedings.",
+    title: "",
+    desc: (
+      <div className="flex flex-row items-center h-12">
+        <div className="mr-2 -mt-1 text-4xl">&#8226;</div>
+        Train policy fellows to dive deep into critical themes like social
+        welfare, governance, and economic reforms.
+      </div>
+    ),
   },
   {
-    title: "Stakeholder Networking: ",
-    desc: "Facilitating connections with key stakeholders through consultancy and outreach initiatives.",
+    title: "",
+    desc: (
+      <div className="flex flex-row items-center h-3">
+        <div className="mr-2 -mt-1 text-4xl">&#8226;</div>
+        Provide exposure to parliamentary and legislative analysis, enabling
+        interns to understand law-making processes, debates, and institutional
+        functioning.
+      </div>
+    ),
   },
   {
-    title: "Sansad Website Training: ",
-    desc: "Enabling MPs and their teams to maximize the use of the official parliamentary portal.",
+    title: "",
+    desc: (
+      <div className="flex flex-row items-center h-3">
+        <div className="mr-2 -mt-1 text-4xl">&#8226;</div>
+        Deliver career-oriented capacity-building workshops focused on policy
+        research skills, legislative drafting, and public sector career
+        pathways.
+      </div>
+    ),
   },
 ];
 
@@ -189,87 +215,57 @@ const Ycpr = () => {
       <SuspenseHandler>
         <ScrollHandler />
       </SuspenseHandler>
-      <div className="xl:px-[8rem] md:px-[6rem] px-[1rem] flex flex-col">
-        <SubHead
-          title={"YuvaCracy Centre for Policy Research (YCPR)"}
-          subtitle={
-            <div className="w-full">
-              <br />
-              <span>
-                At YuvaCracy Centre for Policy Research (YCPR), we are committed
-                to enhance the effectiveness of India's democratic institutions
-                by providing high-quality legislative and policy assistance.
-                Through collaboration, research, and tailored support, we bridge
-                the gap between policymakers and the people they serve.
-              </span>
-            </div>
-          }
-        />
 
-        <ImageTextComp1
-          title={"Our Key Initiatives"}
-          subtitle={"Yuvacracy"}
-          imgSrc={MeetingImg}
-          desc={
-            <div>
-              <span className="mb-2 text-lg font-bold">
-              Legislative Assistance to Members of Parliament (MPs)
-              </span>
-              <br />
-              We equip MPs and their teams with the tools and resources they
-              need to make informed decisions and drive impactful parliamentary
-              contributions. Our services include:
-            </div>
-          }
-          data={DevelopmentData}
-        />
+      <div className="xl:px-[8rem] md:px-[6rem] px-[1rem] flex flex-col">
+        <div className="pt-20">
+          <CustomTitle title={"YuvaCracy Centre for Policy Research (YCPR)"} />
+          <div className="w-full text-lg">
+            At YuvaCracy Centre for Policy Research (YCPR), we are committed to
+            enhance the effectiveness of India's democratic institutions by
+            providing high-quality legislative and policy assistance.
+          </div>
+        </div>
+
+        <div className="w-full pt-20 text-[2.2rem] font-bold font-montserrat">
+          Our Key Programs
+        </div>
+
+        <div className="-mt-10">
+          <ImageTextComp1
+            title={"NITI Internship Program"}
+            imgSrc={MeetingImg}
+            small={true}
+            data={DevelopmentData}
+            bulletAlign={true}
+          />
+        </div>
 
         <ImageTextComp1
           title={"Policy Research for Think Tanks"}
           subtitle={"Building Informed and Engaged Citizens"}
           mirror={true}
-          desc={
-            <span>
-              We provide specialized research services to think tanks, ensuring
-              a nuanced and comprehensive analysis of policies
-              <br />
-              <br />
-              <span className="pr-2 font-bold">Collaborative Research:</span>
-              Partnering with other think tanks for diverse perspectives.
-            </span>
-          }
           imgSrc={PeopleGroup1}
           data={DevelopmentData3}
+          bulletAlign={true}
         />
 
         <ImageTextComp1
           title={"State-Level Legislative Insights"}
-          subtitle={"Ensuring Youth Voices are Heard"}
-          desc={
-            "Our expertise extends beyond the national level to state legislatures, focusing on:"
-          }
           imgSrc={PeopleGroup2}
           data={DevelopmentData2}
+          bulletAlign={true}
         />
 
         <ImageTextComp1
           title={"Supreme Court Judgement Analysis"}
-          subtitle={"Building Informed and Engaged Citizens"}
           mirror={true}
-          desc={
-            <span>
-              We bridge the understanding between judicial decisions and
-              legislative policymaking by examining:
-            </span>
-          }
           imgSrc={PeopleGroup1}
           data={DevelopmentData4}
+          bulletAlign={true}
         />
 
         <ImageTextComp1
           title={"Why YCPR Matters"}
-          subtitle={"Why YCPR?"}
-          desc={"Our approach is rooted in:"}
           imgSrc={PeopleGroup2}
           data={DevelopmentData5}
         />

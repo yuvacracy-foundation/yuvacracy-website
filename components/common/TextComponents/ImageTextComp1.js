@@ -12,7 +12,18 @@ const ImageTextComp1 = ({
   customTextStylePoints = "",
   customSubTextStyle = "",
   mirror = false,
+  small = false,
+  bulletAlign = false, // ✅ NEW (safe default)
 }) => {
+  const renderDesc = (desc) => {
+    if (!bulletAlign || !React.isValidElement(desc)) return desc;
+
+    return React.cloneElement(desc, {
+      className:
+        "flex items-start gap-3 h-auto " + (desc.props.className || ""),
+    });
+  };
+
   return (
     <div className="flex flex-col items-center pt-20 pb-4 md:pb-12 md:flex-row sm:my-3">
       {mirror ? (
@@ -24,8 +35,11 @@ const ImageTextComp1 = ({
               src={imgSrc}
             />
           </div>
-          <div className={`flex flex-col md:w-[50%] w-full order-1 md:order-none md:ml-4 ${customTextStyle} mt-6 md:mt-0`}>
-            <CustomTitle title={title} subtitle={subtitle} />
+
+          <div
+            className={`flex flex-col md:w-[50%] w-full order-1 md:order-none md:ml-4 ${customTextStyle} mt-6 md:mt-0`}
+          >
+            <CustomTitle title={title} subtitle={subtitle} small={small} />
             <span className="text-lg text-textSecond">{desc}</span>
 
             {data && (
@@ -35,18 +49,21 @@ const ImageTextComp1 = ({
                     <span className="py-2 text-lg font-bold font-openSans text-textSecond">
                       {item.title}
                     </span>
-                    <span className="py-2 text-lg text-textSecond">{item.desc}</span>
+                    <span className="py-2 text-lg text-textSecond">
+                      {renderDesc(item.desc)}
+                    </span>
                   </div>
                 ))}
               </div>
             )}
-
           </div>
         </div>
       ) : (
         <div className="w-full md:flex">
-          <div className={`flex flex-col md:w-[50%] w-full order-1 md:order-none md:mr-4 ${customTextStyle}`}>
-            <CustomTitle title={title} subtitle={subtitle} />
+          <div
+            className={`flex flex-col md:w-[50%] w-full order-1 md:order-none md:mr-4 ${customTextStyle}`}
+          >
+            <CustomTitle title={title} subtitle={subtitle} small={small} />
             <span className="text-lg text-textSecond">{desc}</span>
 
             {data && (
@@ -56,12 +73,15 @@ const ImageTextComp1 = ({
                     <span className="py-2 text-lg font-bold font-openSans text-textSecond">
                       {item.title}
                     </span>
-                    <span className="py-2 text-lg text-textSecond">{item.desc}</span>
+                    <span className="py-2 text-lg text-textSecond">
+                      {renderDesc(item.desc)}
+                    </span>
                   </div>
                 ))}
               </div>
             )}
           </div>
+
           <div className="md:w-[50%] w-full flex md:justify-end justify-center order-2 md:order-none">
             <Image
               alt="YuvaCracy is a foundation for Youth"
