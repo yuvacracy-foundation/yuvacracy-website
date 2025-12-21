@@ -28,7 +28,7 @@ const ImageTextComp1 = ({
       {mirror ? (
         <div className="w-full md:flex">
           <div className="md:w-[50%] w-full flex md:mr-4 md:justify-start order-2 md:order-none">
-            <div className="overflow-hidden rounded-xl">
+            <div className="my-auto overflow-hidden rounded-xl">
               <Image
                 alt="YuvaCracy is a foundation for Youth"
                 className={`${imgX} ${imgY} object-cover`}
