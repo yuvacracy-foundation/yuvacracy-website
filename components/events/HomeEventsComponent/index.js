@@ -24,7 +24,6 @@ const HomeEventsComponent = ({ pastEvents = false }) => {
       : eventEndDate >= currentDate;
   });
 
-
   useEffect(() => {
     const updateVisibleCards = () => {
       const containerWidth = window.innerWidth - 16 * 2 * 8; // considering padding (8rem on each side)
@@ -46,24 +45,22 @@ const HomeEventsComponent = ({ pastEvents = false }) => {
   }, []);
 
   return (
-    <div className="w-[100%] xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem]  ">
+    <div className="w-[100%] xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] ">
+      {!pastEvents && <CustomTitle title={"Upcoming Events"} />}
 
-      {!pastEvents && <CustomTitle
-        title={"Upcoming Events"}
-      />}
-
-      {!pastEvents &&
+      {!pastEvents && (
         <p className="text-subheading font-openSans">
           Explore our upcoming events designed to immerse you in a world of
           learning and connection. Engage with renowned thought leaders who are
           shaping the future across various industries, and gain valuable
           insights that will inspire your personal and professional growth.
-        </p>}
+        </p>
+      )}
 
       {/* Event cards */}
-      <div className="flex lg:flex-nowrap flex-wrap sm_desktop:gap-[1.5rem]  md:gap-[1rem] gap-[2rem] mt-[2rem]">
+      <div className="flex flex-wrap sm_desktop:gap-[1.5rem] w-full md:gap-[1rem] gap-[2rem] mt-[2rem]">
         {filteredEvents &&
-          filteredEvents.slice(0, 3).map((data, index) => {
+          filteredEvents.map((data, index) => {
             return <EventCard key={index} data={data} />;
           })}
       </div>

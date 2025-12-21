@@ -23,8 +23,8 @@ const navItems = [
     id: "write-div",
   },
   {
-    name: "CAREER DATABASES",
-    link: "/careers/career-databases",
+    name: "YuvaCracy Opportunity Cell",
+    link: "/careers/yuvacracy-opportunity-cell",
     id: "career-div",
   },
 ];
@@ -34,13 +34,7 @@ const CareerLayout = ({ children }) => {
     <div>
       <PromotionalContent />
       <MainNav />
-      <SubHero
-        title={"YuvaCracy Careers"}
-        subtitle={
-          "Thank you for considering a career with us. We look forward to potentially working together to achieve great things!"
-        }
-        img={CareersHero1}
-      />
+      <SubHero title={"YuvaCracy Careers"} subtitle={""} img={CareersHero1} />
       <SubNav navItems={navItems} />
       {children}
       <Footer />

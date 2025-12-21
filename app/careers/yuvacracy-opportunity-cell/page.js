@@ -17,7 +17,7 @@ import Link from "next/link";
 // const text =
 //   "YuvaCracy welcomes diverse voices and fresh perspectives. By writing for us, you can share your insights on youth leadership, civic participation, and social justice, helping to shape conversations that matter.";
 
-const CareerDatabases = () => {
+const YuvaCracyOppCell = () => {
   return (
     <CareerLayout>
       <SuspenseHandler>
@@ -30,7 +30,7 @@ const CareerDatabases = () => {
         {/* Page Title */}
         <div className="">
           <SubHead
-            title={"Career Databases"}
+            title={"YuvaCracy Opportunity Cell"}
             subtitle={
               <>
                 {
@@ -47,9 +47,18 @@ const CareerDatabases = () => {
                 {"Stay tuned for upcoming updates and new opportunities."}
                 </span> */}
 
-                <Link href="https://chat.whatsapp.com/LvL7MwJqp8ZJgK1WUNQuUg" target="_blank" passHref>
-                  <PrimaryButton primStyle="bg-[#0fb52e]" icon={<FaWhatsapp className="mr-[0.3rem] text-2xl" />} data={{title: "WhatsApp", execute: () => {}}} style={"flex-row-reverse pl-[0.5rem] shadow-md"} />
-                {/* <PrimaryButton data={{title: "WhatsApp"}} icon={<FaWhatsapp className=" mr-[0.3rem] text-3xl" /> }  /> */}
+                <Link
+                  href="https://chat.whatsapp.com/LvL7MwJqp8ZJgK1WUNQuUg"
+                  target="_blank"
+                  passHref
+                >
+                  <PrimaryButton
+                    primStyle="bg-[#0fb52e]"
+                    icon={<FaWhatsapp className="mr-[0.3rem] text-2xl" />}
+                    data={{ title: "WhatsApp", execute: () => {} }}
+                    style={"flex-row-reverse pl-[0.5rem] shadow-md"}
+                  />
+                  {/* <PrimaryButton data={{title: "WhatsApp"}} icon={<FaWhatsapp className=" mr-[0.3rem] text-3xl" /> }  /> */}
                 </Link>
               </>
             }
@@ -87,4 +96,4 @@ const CareerDatabases = () => {
   );
 };
 
-export default CareerDatabases;
+export default YuvaCracyOppCell;

@@ -92,35 +92,35 @@ const HomeHero = () => {
   return (
     <div className=" flex relative w-[100%]  h-[100%]  overflow-clip  ">
       <div className=" md:pr-0 md_phone:pr-[2rem] pr-[1rem] flex gap-[.5rem] z-[20] md:w-[46rem] w-full lg:mt-[3rem] phone:mt-[2rem] sm_phone:mt-[1rem] mt-[2rem] h-fit ">
-      <Suspense
-        fallback={
-          <div
-            className={`  lg:flex hidden group flex-col justify-center items-center gap-[1rem] text-white xl:w-[4rem] duration-300 w-[10rem] h-[17rem]]   text-[1.5rem] rounded-r-xl `}
-          />
-        }
-      >
-        <div
-          className={` lg:flex hidden group flex-col justify-center py-3 items-center gap-[1rem] xl:w-[7rem] duration-300 w-[4rem] h-[22rem] text-[#5d76a1]/90  text-[1.5rem]`}
-        >
-          {socialIcons.map(({ icon, href, label }, index) => (
+        <Suspense
+          fallback={
             <div
-              key={index}
-              className="flex w-full h-full pl-4 hover:border-l-[0.44rem] border-l-transparent border-t-transparent border-b-transparent border-r-transparent hover:border-l-primary transition-all duration-300 hover:text-primary
+              className={`  lg:flex hidden group flex-col justify-center items-center gap-[1rem] text-white xl:w-[4rem] duration-300 w-[10rem] h-[17rem]]   text-[1.5rem] rounded-r-xl `}
+            />
+          }
+        >
+          <div
+            className={` lg:flex hidden group flex-col justify-center py-3 items-center gap-[1rem] xl:w-[7rem] duration-300 w-[4rem] h-[22rem] text-[#5d76a1]/90  text-[1.5rem]`}
+          >
+            {socialIcons.map(({ icon, href, label }, index) => (
+              <div
+                key={index}
+                className="flex w-full h-full pl-4 hover:border-l-[0.44rem] border-l-transparent border-t-transparent border-b-transparent border-r-transparent hover:border-l-primary transition-all duration-300 hover:text-primary
                 hover:from-[#ebf3ff] hover:bg-gradient-to-r hover:via-[#ebf3ff] hover:to-transparent"
-            >
-              {/* This div will change background color only when hovered */}
-              <Link
-                className="flex items-center"
-                href={href}
-                target="_blank"
-                aria-label={label}
               >
-                <span className="pl-3">{icon}</span>
-              </Link>
-            </div>
-          ))}
-        </div>
-      </Suspense>
+                {/* This div will change background color only when hovered */}
+                <Link
+                  className="flex items-center"
+                  href={href}
+                  target="_blank"
+                  aria-label={label}
+                >
+                  <span className="pl-3">{icon}</span>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </Suspense>
 
         <div className="flex flex-col xl:pl-[2rem] md_desktop:pl-[2rem] lg:pl-[1rem] md:pl-[1rem] md_phone:pl-[1rem] pl-[1rem]">
           <h2 className=" font-montserrat font-[800] md:text-[3rem] md_phone:text-[2.5rem] phone:text-[2.3rem] sm_phone:text-[2.2rem] text-[2rem] text-primary md_phone:leading-[3.5rem] leading-[2.7rem] ">
@@ -154,7 +154,8 @@ const HomeHero = () => {
           </div>
 
           <div className="flex gap-[1rem] phone:w-[25rem] w-[100%] mt-[1.5rem] ">
-            <div className=" flex flex-col w-[50%] gap-[.5rem]  ">
+            {/* Growth Comp 1 */}
+            {/* <div className=" flex flex-col w-[50%] gap-[.5rem]  ">
               <div className=" flex gap-[.4rem] ">
                 <h3 className=" font-montserrat phone:text-[1.3rem] text-[1.1rem] font-[600]  ">
                   100+
@@ -165,9 +166,10 @@ const HomeHero = () => {
               <p className=" font-openSans phone:text-[.8rem] text-[.7rem] text-primary font-[500]  ">
                 Community projects initiated by youth leaders.
               </p>
-            </div>
+            </div> */}
 
-            <div className=" flex flex-col w-[50%] gap-[.5rem]  ">
+            {/* Growth Comp 2 */}
+            {/* <div className=" flex flex-col w-[50%] gap-[.5rem]  ">
               <div className=" flex gap-[.4rem] ">
                 <h3 className=" font-montserrat phone:text-[1.3rem] text-[1.1rem] font-[600]  ">
                   5,000+
@@ -178,7 +180,7 @@ const HomeHero = () => {
               <p className=" font-openSans phone:text-[.8rem] text-[.7rem] text-primary font-[500]  ">
                 Young leaders trained through our programs.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
