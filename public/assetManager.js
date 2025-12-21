@@ -91,6 +91,17 @@ import himanshuKumar from "./assets/home/stories-of-impact/himanshu-kumar.jpeg";
 import krishJha from "./assets/home/stories-of-impact/krish-jha.jpeg";
 import hardikaGupta from "./assets/home/stories-of-impact/hardika-gupta.jpeg";
 
+import ZeroTol from "./assets/events/past-events/ZeroTol.png";
+import WorkFundamentals from "./assets/events/past-events/WorkFundamentals.png";
+import WorkBasicRes from "./assets/events/past-events/WorkBasicRes.png";
+import TradeSimp from "./assets/events/past-events/TradeSimp.png";
+import TrackWork from "./assets/events/past-events/TrackWork.png";
+import navigateSansad from "./assets/events/past-events/navigateSansad.png";
+import MasterBare from "./assets/events/past-events/MasterBare.png";
+import IntroLegal from "./assets/events/past-events/IntroLegal.png";
+import FiscalCompass from "./assets/events/past-events/FiscalCompass.png";
+import BridgeDigital from "./assets/events/past-events/BridgeDigital.png";
+
 export {
   HeroImage,
   ProjectUnderConstruction,
@@ -178,4 +189,14 @@ export {
   YclaPublications,
   YclaWorkshop,
   YclaIntern,
+  ZeroTol,
+  WorkFundamentals,
+  WorkBasicRes,
+  TradeSimp,
+  TrackWork,
+  navigateSansad,
+  MasterBare,
+  IntroLegal,
+  FiscalCompass,
+  BridgeDigital,
 };
