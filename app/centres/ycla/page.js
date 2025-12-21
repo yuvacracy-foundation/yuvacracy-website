@@ -1,42 +1,164 @@
 "use client";
 import React from "react";
 import CentreLayout from "../Layout";
-import SubHead from "@/components/common/SubHeadings/SubHead";
 import ImageTextComp1 from "@/components/common/TextComponents/ImageTextComp1";
-import { MeetingImg, PeopleGroup1, PeopleGroup2 } from "@/public/assetManager";
+import {
+  YclaIntern,
+  YclaCollab,
+  YclaHelpDesk,
+  YclaLegalAid,
+  YclaPublications,
+  YclaWorkshop,
+  YclaRights,
+} from "@/public/assetManager";
 import SuspenseHandler from "@/utils/SuspenseHandler";
 import ScrollHandler from "@/utils/ScrollHandler";
+import CustomTitle from "@/components/docs/CustomTitle";
 
 const DevelopmentData = [
   {
-    title: "Core Modules: ",
-    desc: "Topics include Ethical Leadership, Community Organizing, and Conflict Resolution.",
+    title: "",
+    desc: "Rigorous training in legal research and analysis across criminal and civil law.",
   },
   {
-    title: "Specialized Tracks: ",
-    desc: "Participants can choose to focus on areas such as Environmental Leadership, Social Entrepreneurship, or Public Health.",
+    title: "",
+    desc: "Hands-on exposure to legal drafting, including pleadings, applications, opinions and notices in both criminal and civil matters.",
+  },
+  {
+    title: "",
+    desc: "Structured practice in moot court exercises, focusing on memorial drafting, oral advocacy and court craft.",
+  },
+  {
+    title: "",
+    desc: "Development of case analysis and litigation strategy, grounded in statutory provisions and judicial precedents.",
   },
 ];
 
 const DevelopmentData1 = [
   {
-    title: "Project Examples: ",
-    desc: "From organizing community clean-ups to leading health awareness campaigns, our participants tackle projects that address the most pressing needs of their communities.",
+    title: "",
+    desc: "Capacity-building programmes for law students, legal practitioners and civil society organisations on core areas of law and practice.",
   },
   {
-    title: "Before and After Photos: ",
-    desc: "Show the impact of these projects with before-and-after images that tell a powerful story of transformation.",
+    title: "",
+    desc: "Specialised sessions on gender justice, human rights, constitutional provisions and statutory compliance.",
+  },
+  {
+    title: "",
+    desc: "Practical sessions on legal remedies, procedural law and advocacy.",
+  },
+  {
+    title: "",
+    desc: "Engagement with practitioners and subject matter experts to bridge doctrinal law and real-world legal application.",
   },
 ];
 
 const DevelopmentData2 = [
   {
-    title: "Mentorship Program: ",
-    desc: "Each participant is paired with a mentor who guides them through their leadership journey, offering support and practical advice.",
+    title: "",
+    desc: (
+      <span>
+        <span className="font-bold">Blogs:</span> Focus on core legal subjects,
+        including statutory interpretation, constitutional developments,
+        criminal and procedural law, regulatory frameworks and evolving judicial
+        doctrines.
+      </span>
+    ),
   },
   {
-    title: "Networking Events: ",
-    desc: "We organize events where participants can connect with leaders from various sectors, expanding their professional network.",
+    title: "",
+    desc: (
+      <span>
+        <span className="font-bold">Legal Review:</span> Provides structured
+        coverage of landmark judgments, doctrinal shifts and significant
+        amendments, with in-depth case studies and jurisdiction or
+        statute-specific legal analysis relevant for legal education and
+        practice.
+      </span>
+    ),
+  },
+  {
+    title: "",
+    desc: (
+      <span>
+        <span className="font-bold">Knowledge Repository:</span> Maintains a
+        free, open-access archive of bare-act explainers, case law digests,
+        comparative legal notes, procedural checklists and community contributed
+        legal research to support rigorous legal learning and reference.
+      </span>
+    ),
+  },
+];
+
+const DevelopmentData3 = [
+  {
+    title: "",
+    desc: "Conduct legal awareness outreach in colleges and community settings focusing on fundamental, statutory and procedural rights.",
+  },
+  {
+    title: "",
+    desc: "Deliver interactive, case-based sessions to build legal literacy, rights consciousness and practical understanding of remedies.",
+  },
+  {
+    title: "",
+    desc: "Simplify complex legal provisions into accessible, citizen-focused knowledge without compromising legal accuracy.",
+  },
+  {
+    title: "",
+    desc: "Encourage informed engagement with legal institutions, grievance redressal mechanisms and courts.",
+  },
+];
+
+const DevelopmentData4 = [
+  {
+    title: "",
+    desc: "Organise legal aid clinics to provide free legal assistance, counselling and preliminary legal advice.",
+  },
+  {
+    title: "",
+    desc: "Facilitate training of para legal volunteers in collaboration with NALSA/DALSA.",
+  },
+  {
+    title: "",
+    desc: "Strengthen community-level legal awareness and institutional linkage with the formal legal aid system.",
+  },
+];
+
+const DevelopmentData5 = [
+  {
+    title: "",
+    desc: "Enter into MoUs with universities and academic institutions for joint research, training, and capacity-building initiatives.",
+  },
+  {
+    title: "",
+    desc: "Develop strategic partnerships with NGOs and civil society organisations to strengthen implementation, outreach, and social impact.",
+  },
+  {
+    title: "",
+    desc: "Co-design programmes combining research, field engagement, and legal awareness.",
+  },
+  {
+    title: "",
+    desc: "Facilitate knowledge exchange through joint events, publications, and community interventions.",
+  },
+];
+
+const DevelopmentData6 = [
+  {
+    title: "",
+    desc: "Provide dedicated support for preliminary legal queries, offering accurate guidance on rights, remedies, and procedural steps.",
+  },
+  {
+    title: "",
+    desc: "Assist individuals with appropriate legal direction and referrals, without substituting formal legal representation.",
+  },
+  {
+    title: "",
+    desc: "Facilitate documentation guidance, including basic information on applications, notices, and legal formats.",
+  },
+  {
+    title: "",
+    desc: "Ensure confidential and ethical handling of queries, in line with professional legal standards.",
   },
 ];
 
@@ -50,74 +172,99 @@ const Ycla = () => {
         id="ycla-div"
         className="xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] flex flex-col"
       >
-        <SubHead
-          title={"YuvaCracy Centre for Legal Affairs (YCLA)"}
-          subtitle={
-            "YuvaCracy Centre for Legal Affairs (YCLA) invites you to explore the dynamic world of law and governance. Our mission is to bridge the gap between academic learning and real-world expertise, shaping the next generation of legal professionals who are ready to lead and innovate."
-          }
-        />
+        <div className="pt-20">
+          <CustomTitle title={"YuvaCracy Centre for Legal Affairs (YCLA)"} />
+          <div className="w-full text-lg">
+            YCLA champions access to justice, legal aid, litigation strategy and
+            legal education. We equip individuals, communities and young legal
+            professionals with tools to navigate India's legal landscape. By
+            blending young energy with expert guidance, we turn legal knowledge
+            into real-world empowerment.
+          </div>
+        </div>
+
+        <div className="w-full pt-20 text-[2.2rem] font-bold font-montserrat">
+          Our Key Programs
+        </div>
 
         <ImageTextComp1
-          title={"Legal Research"}
+          title={"Internship Program"}
           subtitle={""}
-          imgSrc={MeetingImg}
+          imgSrc={YclaIntern}
           customTextStyle="md:pt-12"
-          desc={
-            <div>
-              {/* <span className="text-xl font-bold">Legal Research</span>
-              <br /> */}
-              <span className="text-xl">
-                Dive deep into the frameworks of law, governance, policy, and
-                justice. Our research initiatives encourage exploration,
-                analysis, and innovation to tackle contemporary legal
-                challenges. Our programs guide students and young professionals
-                in conducting meaningful, application-based legal research.
-              </span>
-            </div>
-          }
-          data={""}
+          desc={""}
+          data={DevelopmentData}
+          bullet={true}
+          small={true}
         />
 
         <ImageTextComp1
           mirror={true}
-          title={"Quality Internships"}
-          subtitle={"Turning knowledge into Action"}
+          title={"YCLA Workshops"}
+          subtitle={""}
           customTextStyle="md:pt-12"
-          desc={
-            <span className="text-xl">
-              We connect motivated law students with high-impact internships that offer real-world legal exposure. These experiences are carefully curated to enhance skills, build confidence, and help define career paths.
-            </span>
-          }
-          data={""}
-          imgSrc={PeopleGroup1}
+          desc={""}
+          data={DevelopmentData1}
+          imgSrc={YclaWorkshop}
+          bullet={true}
+          small={true}
         />
 
         <ImageTextComp1
-          title={"Skill-Building & Practical Training"}
+          title={"Publications"}
           subtitle={""}
-          customTextStyle="md:pt-12"
-          desc={
-            <span className="text-xl">
-              From legal writing and reading bare acts to mooting, advocacy, and legal reasoning, our hands-on workshops are designed to translate classroom theory into courtroom and professional readiness.
-            </span>
-          }
-          data={""}
-          imgSrc={PeopleGroup2}
+          desc={""}
+          data={DevelopmentData2}
+          imgSrc={YclaPublications}
+          bullet={true}
+          small={true}
         />
 
         <ImageTextComp1
           mirror={true}
-          title={"Community & Events"}
-          customTextStyle="md:pt-12"
-          subtitle={"Be part of a vibrant network"}
-          desc={
-            <span className="text-xl">
-              YCLA hosts interactive legal seminars, panel discussions, and policy conferences that bring together students, advocates, researchers, and educators. These platforms spark dialogue, encourage collaboration, and build a vibrant legal community.
-            </span>
-          }
-          data={""}
-          imgSrc={PeopleGroup1}
+          title={"Know Your Rights Campaign"}
+          subtitle={""}
+          desc={""}
+          data={DevelopmentData3}
+          imgSrc={YclaRights}
+          bullet={true}
+          small={true}
+          imgX="w-[25rem]"
         />
+
+        <ImageTextComp1
+          title={"Legal Aid Clinics"}
+          subtitle={""}
+          desc={""}
+          data={DevelopmentData4}
+          imgSrc={YclaLegalAid}
+          bullet={true}
+          small={true}
+        />
+        <ImageTextComp1
+          mirror={true}
+          title={"Collaborative Projects"}
+          subtitle={""}
+          desc={""}
+          data={DevelopmentData5}
+          imgSrc={YclaCollab}
+          bullet={true}
+          small={true}
+          imgX="w-[30rem]"
+        />
+        <ImageTextComp1
+          title={"Legal HelpDesk"}
+          subtitle={""}
+          desc={""}
+          data={DevelopmentData6}
+          imgSrc={YclaHelpDesk}
+          bullet={true}
+          small={true}
+        />
+
+        <div className="w-full pt-12 text-xl font-semibold ">
+          Join our programs, access resources or partner today.
+        </div>
       </div>
     </CentreLayout>
   );

@@ -31,10 +31,24 @@ import SupportHeroImg from "./assets/support/Hero.png";
 import DonateUs from "./assets/support/DonateUs.png";
 import DonateImg2 from "./assets/support/DonateImg2.png";
 import CollabImg from "./assets/support/collab.png";
+
 import CenterHero from "./assets/centres/CentreHeroImg.png";
 import MeetingImg from "./assets/centres/Meeting.png";
 import PeopleGroup1 from "./assets/centres/PeopleGroup1.png";
 import PeopleGroup2 from "./assets/centres/PeopleGroup2.png";
+import YcprNiti from "./assets/centres/YcprNiti.png";
+import YcprCollab from "./assets/centres/YcprCollab.png";
+import YcprLeg from "./assets/centres/YcprLeg.png";
+import YcprWork from "./assets/centres/YcprWork.png";
+
+import YclaIntern from "./assets/centres/YclaIntern.png";
+import YclaWorkshop from "./assets/centres/YclaWorkshop.png";
+import YclaPublications from "./assets/centres/YclaPublications.png";
+import YclaRights from "./assets/centres/YclaRights.png";
+import YclaLegalAid from "./assets/centres/YclaLegalAid.png";
+import YclaCollab from "./assets/centres/YclaCollab.png";
+import YclaHelpDesk from "./assets/centres/YclaHelpDesk.png";
+
 import AdvisorImage from "./assets/about/people/advisor/advisor.png";
 import PartnerImage from "./assets/about/people/partner/partner.png";
 import TeamMemberImage from "./assets/about/people/team/team-member.png";
@@ -43,7 +57,6 @@ import YuvaCracyAboutImage2 from "./assets/about/org/yuvacracy/about-1.png";
 import YuvaCracyAboutImage3 from "./assets/about/org/yuvacracy/about-2.png";
 import YuvaCracyAboutImage21 from "./assets/about/org/yuvacracy/about-12.png";
 import GetInvolved1Image from "./assets/home/get-involved/get-involved1.png";
-
 import Partner1Image from "./assets/about/people/partner/p1.png";
 import Partner2Image from "./assets/about/people/partner/p2.png";
 import Partner3Image from "./assets/about/people/partner/p3.png";
@@ -154,4 +167,15 @@ export {
   himanshuKumar,
   krishJha,
   hardikaGupta,
+  YcprNiti,
+  YcprCollab,
+  YcprLeg,
+  YcprWork,
+  YclaHelpDesk,
+  YclaCollab,
+  YclaLegalAid,
+  YclaRights,
+  YclaPublications,
+  YclaWorkshop,
+  YclaIntern,
 };
