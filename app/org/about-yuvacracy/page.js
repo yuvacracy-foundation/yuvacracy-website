@@ -7,6 +7,7 @@ import BreadCrumbs from "@/components/common/BreadCrumbs";
 import List from "@/components/docs/list";
 import Image from "next/image";
 import {
+  Logo,
   YuvaCracyAboutImage1,
   YuvaCracyAboutImage2,
   YuvaCracyAboutImage21,
@@ -34,12 +35,12 @@ const YuvaCracyPage = () => {
         <div className="flex  xsm_desktop:flex-row flex-col-reverse justify-center w-[100%]  mt-[3rem]  ">
           <div className=" z-[1]   flex xsm_desktop:justify-center justify-center xsm_desktop:w-[calc(100%-26rem)] w-[100%]  ">
             <Image
-              src={YuvaCracyAboutImage1}
+              src={Logo}
               alt="Yuvacracy"
               className=" sm:max-w-[75%]  w-[150rem]  sm:min-w-[30rem] xsm_desktop:mt-0 mt-[-3rem] "
             />
           </div>
-          <div className="flex  z-[3] flex-col  justify-center xsm_desktop:w-[33rem] w-[100%] font-openSans ">
+          <div className="flex  z-[3] flex-col  justify-center xsm_desktop:w-[33rem] w-[100%] font-openSans">
             <div className=" xsm_desktop:w-[38rem] w-[100%]  p-[1.5rem] xsm_desktop:ml-[-15rem] rounded-md flex flex-col gap-[1rem] bg-primary  text-white ">
               <h3 className=" opacity-[.6] sm:text-[.95rem] text-[.85rem] ">
                 Our Story

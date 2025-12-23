@@ -101,8 +101,9 @@ import MasterBare from "./assets/events/past-events/MasterBare.png";
 import IntroLegal from "./assets/events/past-events/IntroLegal.png";
 import FiscalCompass from "./assets/events/past-events/FiscalCompass.png";
 import BridgeDigital from "./assets/events/past-events/BridgeDigital.png";
-
+import Logo from "./assets/about/org/logo.jpg";
 export {
+  Logo,
   HeroImage,
   ProjectUnderConstruction,
   CareersHero1,
