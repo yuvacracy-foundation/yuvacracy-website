@@ -19,7 +19,7 @@ const faqs = [
           <span className="font-semibold">
             YCPR (YuvaCracy Centre for Policy Research):
           </span>{" "}
-          Our center offers <span className="font-semibold">NITI (Policy)</span>{" "}
+          Our centre offers <span className="font-semibold">NITI (Policy)</span>{" "}
           Internships, where participants dive into policy research, analysis,
           and development.
         </span>
@@ -31,7 +31,7 @@ const faqs = [
           <span className="font-semibold">
             YCLA (YuvaCracy Centre for Legal Affairs):
           </span>{" "}
-          Our center provides <span className="font-semibold">Vidhi (Law)</span>{" "}
+          Our centre provides <span className="font-semibold">Vidhi (Law)</span>{" "}
           Internships, focusing on legal research, advocacy, and constitutional
           studies.
         </span>
