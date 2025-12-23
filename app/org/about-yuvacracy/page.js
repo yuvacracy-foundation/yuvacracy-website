@@ -1,80 +1,82 @@
-'use client'
-import React from 'react'
-import Para from '@/components/docs/para'
-import CustomTitle from '@/components/docs/CustomTitle'
-import Heading from '@/components/docs/Heading'
-import BreadCrumbs from '@/components/common/BreadCrumbs'
-import List from '@/components/docs/list'
-import Image from 'next/image'
-import { YuvaCracyAboutImage1, YuvaCracyAboutImage2, YuvaCracyAboutImage21, YuvaCracyAboutImage3 } from '@/public/assetManager'
-import aboutMissionData from '@/components/about/org/yuvacracy/aboutMissionData'
-
+"use client";
+import React from "react";
+import Para from "@/components/docs/para";
+import CustomTitle from "@/components/docs/CustomTitle";
+import Heading from "@/components/docs/Heading";
+import BreadCrumbs from "@/components/common/BreadCrumbs";
+import List from "@/components/docs/list";
+import Image from "next/image";
+import {
+  YuvaCracyAboutImage1,
+  YuvaCracyAboutImage2,
+  YuvaCracyAboutImage21,
+  YuvaCracyAboutImage3,
+} from "@/public/assetManager";
+import aboutMissionData from "@/components/about/org/yuvacracy/aboutMissionData";
 
 const YuvaCracyPage = () => {
   return (
-    <div className=' mt-[2rem] ' >
-      <div className=' my-[1.5rem]  ' >
+    <div className=" mt-[2rem] ">
+      <div className=" my-[1.5rem]  ">
         <BreadCrumbs />
       </div>
 
       <div>
-
-        <div className='flex justify-center md_phone:mt-[4rem] mt-[2rem] gap-[.5rem]  ' >
+        <div className="flex justify-center md_phone:mt-[4rem] mt-[2rem] gap-[.5rem]  ">
           <Heading
             data={{
-              head: "About YuvaCracy"
+              head: "About YuvaCracy",
             }}
-            styles=' uppercase '
+            styles=" uppercase "
           />
         </div>
 
-        <div className='flex  xsm_desktop:flex-row flex-col-reverse justify-center w-[100%]  mt-[3rem]  ' >
-          <div className=' z-[1]   flex xsm_desktop:justify-center justify-center xsm_desktop:w-[calc(100%-26rem)] w-[100%]  ' >
-
+        <div className="flex  xsm_desktop:flex-row flex-col-reverse justify-center w-[100%]  mt-[3rem]  ">
+          <div className=" z-[1]   flex xsm_desktop:justify-center justify-center xsm_desktop:w-[calc(100%-26rem)] w-[100%]  ">
             <Image
               src={YuvaCracyAboutImage1}
-              alt='Yuvacracy'
-              className=' sm:max-w-[75%]  w-[150rem]  sm:min-w-[30rem] xsm_desktop:mt-0 mt-[-3rem] '
+              alt="Yuvacracy"
+              className=" sm:max-w-[75%]  w-[150rem]  sm:min-w-[30rem] xsm_desktop:mt-0 mt-[-3rem] "
             />
           </div>
-          <div className='flex  z-[3] flex-col  justify-center xsm_desktop:w-[33rem] w-[100%] font-openSans ' >
-            <div className=' xsm_desktop:w-[38rem] w-[100%]  p-[1.5rem] xsm_desktop:ml-[-15rem] rounded-md flex flex-col gap-[1rem] bg-primary  text-white ' >
-              <h3 className=' opacity-[.6] sm:text-[.95rem] text-[.85rem] ' >Our Story</h3>
-              <h2 className=' font-[800] sm:text-[2.3rem] text-[1.9rem] ' >About the YuvaCracy Group</h2>
-              <p className=' opacity-[.7] sm:text-[.95rem] text-[.85rem] ' >YuvaCracy is more than just an organization—it's a movement committed to shaping a democratic future where youth take the lead. As a parent organization, YuvaCracy Group is evolving to encompass a wide range of initiatives, including a non-profit arm also known as YuvaCracy Foundation, with focused efforts in Public Policy, Legal Affairs, Research, and Dialogues.
+          <div className="flex  z-[3] flex-col  justify-center xsm_desktop:w-[33rem] w-[100%] font-openSans ">
+            <div className=" xsm_desktop:w-[38rem] w-[100%]  p-[1.5rem] xsm_desktop:ml-[-15rem] rounded-md flex flex-col gap-[1rem] bg-primary  text-white ">
+              <h3 className=" opacity-[.6] sm:text-[.95rem] text-[.85rem] ">
+                Our Story
+              </h3>
+              <h2 className=" font-[800] sm:text-[2.3rem] text-[1.9rem] ">
+                About the YuvaCracy Group
+              </h2>
+              <p className=" opacity-[.7] sm:text-[.95rem] text-[.85rem] ">
+                YuvaCracy is more than just an organization—it's a movement
+                committed to shaping a democratic future where youth take the
+                lead. As a parent organization, YuvaCracy Group is evolving to
+                encompass a wide range of initiatives, including a non-profit
+                arm also known as YuvaCracy Foundation, with focused efforts in
+                Public Policy, Legal Affairs, Research, and Dialogues.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className='flex flex-col gap-[1rem] mt-[3rem] ' >
-
-        <CustomTitle
-          title={'About the Foundation'}
-          small={true}
-        />
+      <div className="flex flex-col gap-[1rem] mt-[3rem] ">
+        <CustomTitle title={"About the Foundation"} small={true} />
         <Para
           data={{
-            para: "YuvaCracy Foundation is a non-profit organization registered under section 8 of The Companies Act, 2013, with approvals from the Ministry of Corporate Affairs, Ministry of Micro, Small & Medium Enterprises (MSME), and recognition on NGO Darpan (NITI Aayog, Government of India). Committed to excellence, we proudly hold ISO Certification 9001:2015.\n\nWe are committed to drive meaningful change by empowering young minds to actively engage in the democratic process, fostering India-centric solutions to today’s most pressing challenges. We are continually expanding our reach, guided by the belief that the future of democracy depends on the active involvement and innovative thinking of the next generation."
+            para: "YuvaCracy Foundation is a non-profit organization registered under section 8 of The Companies Act, 2013, with approvals from the Ministry of Corporate Affairs, Ministry of Micro, Small & Medium Enterprises (MSME), and recognition on NGO Darpan (NITI Aayog, Government of India). Committed to excellence, we proudly hold ISO Certification 9001:2015.\n\nWe are committed to drive meaningful change by empowering young minds to actively engage in the democratic process, fostering India-centric solutions to today’s most pressing challenges. We are continually expanding our reach, guided by the belief that the future of democracy depends on the active involvement and innovative thinking of the next generation.",
           }}
         />
       </div>
 
-
-      <div className='flex flex-col gap-[1rem] mt-[3rem] ' >
-
-        <CustomTitle
-          title={'Our Mission and Vision'}
-          small={true}
-        />
+      <div className="flex flex-col gap-[1rem] mt-[3rem] ">
+        <CustomTitle title={"Our Mission and Vision"} small={true} />
         <Para
           data={{
-            para: "Our mission is to empower and position the youth at the nucleus of democracy, fostering their engagement in policy-making and legal spaces. With the guiding principle, \"Of the Youth, By the Youth, and For the Youth,\" we strive to create a lasting impact on the future by shaping informed and empowered leaders.\n\nAlong with this, YuvaCracy Foundation also tends to cultivate a culture of civic responsibility among youth by equipping them with the knowledge, skills, and platforms to lead change in their communities. We envision a future where every youth of our country is an active participant in the democratic process, contributing to the nation's growth and prosperity. "
+            para: 'Our mission is to empower and position the youth at the nucleus of democracy, fostering their engagement in policy-making and legal spaces. With the guiding principle, "Of the Youth, By the Youth, and For the Youth," we strive to create a lasting impact on the future by shaping informed and empowered leaders.\n\nAlong with this, YuvaCracy Foundation also tends to cultivate a culture of civic responsibility among youth by equipping them with the knowledge, skills, and platforms to lead change in their communities. We envision a future where every youth of our country is an active participant in the democratic process, contributing to the nation\'s growth and prosperity. ',
           }}
         />
       </div>
-
 
       {/* <div className=' flex xsm_desktop:flex-row flex-col w-[100%] gap-[1rem] items-center mt-[8rem]  ' >
 
@@ -156,10 +158,8 @@ const YuvaCracyPage = () => {
 
         </div>
       </div> */}
+    </div>
+  );
+};
 
-
-    </div >
-  )
-}
-
-export default YuvaCracyPage
+export default YuvaCracyPage;
