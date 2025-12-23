@@ -35,7 +35,7 @@ const YuvaCracyPage = () => {
         <div className="flex  xsm_desktop:flex-row flex-col-reverse justify-center w-[100%]  mt-[3rem]  ">
           <div className=" z-[1]   flex xsm_desktop:justify-center justify-center xsm_desktop:w-[calc(100%-26rem)] w-[100%]  ">
             <Image
-              src={Logo}
+              src={YuvaCracyAboutImage1}
               alt="Yuvacracy"
               className=" sm:max-w-[75%]  w-[150rem]  sm:min-w-[30rem] xsm_desktop:mt-0 mt-[-3rem] "
             />
