@@ -30,7 +30,7 @@ const EventCard = ({ data }) => {
                 <h2 className=" text-[.75rem]   ">{data.start}</h2>
                 <h2 className=" text-[.6rem]   ">{data.startTime}</h2>
               </div>
-              <p>---</p>
+              {/* <p>---</p> */}
               {/* <MdCalendarMonth className=' text-[1.6rem] ' /> */}
               <div className="flex flex-col ">
                 <h2 className=" text-[.75rem]   ">{data.end}</h2>
