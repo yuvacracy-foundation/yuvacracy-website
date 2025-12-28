@@ -12,14 +12,10 @@ import SubHead from "@/components/common/SubHeadings/SubHead";
 
 const data = [
   {
-    desc: "Research fellowships, internships, and workshops for law and policy students.",
-  },
-  { desc: "Legal awareness programs in colleges and communities." },
-  {
-    desc: "Youth-led initiatives on governance, justice, and civic participation.",
+    desc: "Every program we run whether it's a research project, legal awareness workshop, policy internship, training session, or community outreach initiative, is made possible solely through our own efforts and personal commitment. We have been sustaining this work independently, without external funding",
   },
   {
-    desc: "Operational support to ensure continuity, outreach, and scale of our programs.",
+    desc: "If you believe in what we do and wish to contribute voluntarily, no matter how big or small the amount, your support would mean a lot. Every contribution helps us continue and expand our impact.",
   },
 ];
 
@@ -118,62 +114,73 @@ const Donate = () => {
           }
         />
 
-        <div className="flex flex-col md:flex-row items-center md:h-[38rem] mt-[6rem] md:mt-[12rem]">
+        <div className="flex flex-col md:flex-row items-center md:h-[42rem] mt-[6rem] md:mt-[12rem]">
           {/* Image Section */}
           <Image
             alt="YuvaCracy is a foundation for youth"
-            className="w-full md:w-[50%] h-[20rem] md:h-[38rem] object-cover"
+            className="w-full md:w-[50%] h-[20rem] md:h-[42rem] object-cover"
             src={DonateImg2}
           />
 
           {/* Donation Info Section */}
-          <div className="bg-primary h-full flex flex-col justify-around text-white py-8 px-4 md:px-12 rounded-none md:rounded-r-lg w-full md:w-[50%]">
-            <div>
-              <span className="text-2xl font-bold sm:text-3xl font-montserrat">
-                How your donation helps
-              </span>
-              <div className="flex items-center py-2">
-                <div className="h-[0.3rem] max-w-[50%] bg-white flex-grow mt-1 mr-2" />
-                <span className="italic text-nowrap text-white text-[1.1rem]">
-                  YuvaCracy
-                </span>
+          <div className="bg-primary overflow-y-auto text-white w-full md:w-[50%] h-full flex flex-col justify-center px-6 py-10 md:px-12 md:py-14">
+            {/* Heading */}
+            <h2 className="text-3xl font-bold tracking-wide font-montserrat md:text-4xl">
+              Call for Donations!
+            </h2>
+
+            {/* Description */}
+            <div className="mt-6 space-y-4 text-[#E0E0E0] font-montserrat text-sm md:text-base leading-relaxed">
+              <p>
+                Every program we run — whether it’s a <b>research project</b>,{" "}
+                <b>legal awareness workshop</b>, <b>policy internship</b>,
+                training session, or <b>community outreach initiative</b> — is
+                made possible solely through our own efforts and personal
+                commitment. We have been sustaining this work independently,
+                without external funding.
+              </p>
+
+              <p>
+                If you believe in what we do and wish to contribute voluntarily,
+                no matter how big or small the amount, your support would mean a
+                lot. Every contribution helps us continue and expand our impact.
+              </p>
+            </div>
+
+            {/* Donation Details Box */}
+            <div className="h-full p-4 mt-8 text-sm border rounded-sm border-white/60 md:p-6 font-montserrat md:text-base">
+              <h3 className="mb-4 font-bold tracking-wide text-white">
+                DETAILS FOR DONATION
+              </h3>
+
+              <div className="space-y-2 text-[#E0E0E0]">
+                <p>
+                  <span className="font-semibold text-white">
+                    A/c Holder Name:
+                  </span>{" "}
+                  YUVACRACY FOUNDATION
+                </p>
+                <p>
+                  <span className="font-semibold text-white">Bank:</span> State
+                  Bank of India
+                </p>
+                <p>
+                  <span className="font-semibold text-white">Account No:</span>{" "}
+                  40631194535
+                </p>
               </div>
             </div>
-            <div className="font-montserrat text-[#E0E0E0] text-md">
-              Your support directly funds:
-            </div>
-            {/* Donation Details */}
-            <div className="flex flex-col p-2 space-y-4 md:p-4">
-              {data.map((item, ind) => (
-                <div
-                  key={ind}
-                  className="flex font-montserrat items-center text-md text-[#E0E0E0]"
-                >
-                  <BsBarChartLine className="w-6 h-6 m-2 mr-4" /> {item.desc}
-                </div>
-              ))}
-            </div>
 
-            {/* Amount Buttons */}
-            <div className="flex flex-wrap justify-around gap-4 px-4 mt-4 md:px-10 sm_desktop:w-full">
-              <button className="border-2 border-[#B3B3B3] hover:bg-[#2d3a8d] font-openSans text-lg md:text-xl text-[#B3B3B3] py-2 px-4 rounded-xl">
-                ₹ 100
-              </button>
-              <button className="border-2 border-[#B3B3B3] hover:bg-[#2d3a8d] font-openSans text-lg md:text-xl text-[#B3B3B3] py-2 px-4 rounded-xl">
-                ₹ 500
-              </button>
-              <button className="border-2 border-[#B3B3B3] hover:bg-[#2d3a8d] font-openSans text-lg md:text-xl text-[#B3B3B3] py-2 px-4 rounded-xl">
-                ₹ 1000
-              </button>
-              <button className="border-2 border-[#B3B3B3] hover:bg-[#2d3a8d] font-openSans text-lg md:text-xl text-[#B3B3B3] py-2 px-4 rounded-xl">
-                ₹ 1500
-              </button>
+            {/* Footer */}
+            <div className="mt-6 text-xs md:text-sm text-[#CFCFCF] font-montserrat">
+              <p>
+                For any query, contact{" "}
+                <span className="font-semibold text-white">
+                  Shivashish Narayan
+                </span>
+              </p>
+              <p className="underline">shivashish.yuvacracy@gmail.com</p>
             </div>
-
-            {/* Donate Button */}
-            <button className="w-full py-2 mt-6 font-bold text-blue-900 bg-white rounded md:mt-8">
-              DONATE
-            </button>
           </div>
         </div>
       </div>
