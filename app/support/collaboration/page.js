@@ -9,7 +9,15 @@ import SuspenseHandler from "@/utils/SuspenseHandler";
 import ScrollHandler from "@/utils/ScrollHandler";
 import SubHead from "@/components/common/SubHeadings/SubHead";
 import ImageTextComp1 from "@/components/common/TextComponents/ImageTextComp1";
-import { MeetingImg, PeopleGroup1, PeopleGroup2 } from "@/public/assetManager";
+import {
+  thinkTank,
+  EduInst,
+  MediaImg,
+  NGOImg,
+  publicSector,
+  PeopleGroup1,
+  PeopleGroup2,
+} from "@/public/assetManager";
 
 // const data = [
 //   {
@@ -319,7 +327,7 @@ const Collaboration = () => {
               real-world impact.
             </span>
           }
-          imgSrc={PeopleGroup1}
+          imgSrc={EduInst}
           data={DevelopmentData1}
         />
 
@@ -334,7 +342,7 @@ const Collaboration = () => {
               challenges at the grassroots level.
             </span>
           }
-          imgSrc={PeopleGroup2}
+          imgSrc={NGOImg}
           data={DevelopmentData2}
         />
 
@@ -348,7 +356,7 @@ const Collaboration = () => {
               frameworks.
             </span>
           }
-          imgSrc={PeopleGroup1}
+          imgSrc={publicSector}
           data={DevelopmentData3}
         />
 
@@ -363,7 +371,7 @@ const Collaboration = () => {
               capacity-building initiatives.
             </span>
           }
-          imgSrc={PeopleGroup2}
+          imgSrc={thinkTank}
           data={DevelopmentData4}
         />
 
@@ -376,7 +384,7 @@ const Collaboration = () => {
               To amplify awareness and disseminate India-centric ideas.
             </span>
           }
-          imgSrc={PeopleGroup1}
+          imgSrc={MediaImg}
           data={DevelopmentData5}
         />
 

@@ -102,7 +102,17 @@ import IntroLegal from "./assets/events/past-events/IntroLegal.png";
 import FiscalCompass from "./assets/events/past-events/FiscalCompass.png";
 import BridgeDigital from "./assets/events/past-events/BridgeDigital.png";
 import Logo from "./assets/about/org/logo.jpg";
+import EduInst from "./assets/support/eduInst.jpeg";
+import MediaImg from "./assets/support/Media.jpg";
+import NGOImg from "./assets/support/NGO_One.jpg";
+import publicSector from "./assets/support/publicSector.jpeg";
+import thinkTank from "./assets/support/thinkTank.png";
 export {
+  thinkTank,
+  EduInst,
+  MediaImg,
+  NGOImg,
+  publicSector,
   Logo,
   HeroImage,
   ProjectUnderConstruction,

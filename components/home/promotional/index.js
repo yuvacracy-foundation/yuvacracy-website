@@ -104,7 +104,20 @@ const PromotionalContent = () => {
                                 `${pathname}?promoId=${data.youtubeId}`
                               );
                             } else {
-                              router.push(data.url); 
+                              switch (data.type) {
+                                case "internal":
+                                  router.push(data.url);
+                                  break;
+                                case "external":
+                                  window.open(
+                                    data.url,
+                                    "_blank",
+                                    "noopener,noreferrer"
+                                  );
+                                  break;
+                                default:
+                                  router.push("/");
+                              }
                             }
                           }}
                           className="text-nowrap active:scale-[.95] duration-300 flex text-[.8rem] border-[1px] border-white rounded-full px-[.8rem] py-[.2rem] justify-center items-center gap-[.3rem]"
