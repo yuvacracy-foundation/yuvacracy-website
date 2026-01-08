@@ -108,7 +108,7 @@ const eventData = [
     type: "Online",
     location: "",
     thumbnail: BridgeDigital,
-    link: "https://www.linkedin.com/posts/yclaofficial_law-legal-lawschool-activity-7380956281638940672-TgOR",
+    link: "https://www.linkedin.com/posts/yclaofficial_yclaworkshop-yuvacracy-yuvacracyfoundation-activity-7365412153475919872-Sl6_?utm_source=share&utm_medium=member_android&rcm=ACoAACvb66sBLXBaZPBTWyfVtbmtbMaoohjt8Fs",
     slug: "digital-divide-free-speech-ycla",
   },
   {
