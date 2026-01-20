@@ -2,21 +2,10 @@ import {
   hardikaGupta,
   himanshuKumar,
   krishJha,
-  StoriesImpactImage,
+  mannatKhunger,
 } from "@/public/assetManager";
 
 const storiesOfImpactData = [
-  {
-    headline: "Transforming Communities",
-    desc: "Maria's journey from participant to community leader is a testament to the power of our leadership training program. Her community garden project now provides food for over 100 families, creating a sustainable and supportive environment. Maria's leadership has inspired others in her community to take initiative, leading to a ripple effect of positive change that continues to grow.",
-    userName: "maria-smith",
-    slug: "maria-transforming-communities",
-    images: [
-      {
-        src: StoriesImpactImage,
-      },
-    ],
-  },
   {
     headline: "Himanshu Kumar",
     desc: "I’m incredibly grateful to have been part of the Fundamentals of Research workshop organized by YCPR, the policy wing of the YuvaCracy Foundation, on January 5th, 2025. This workshop was a fantastic opportunity to learn and dive deeper into the technical aspects of research. Thank you to the YuvaCracy Foundation for organizing such an enriching experience.",
@@ -51,46 +40,13 @@ const storiesOfImpactData = [
     ],
   },
   {
-    headline: "Sustainable Farming Revolution",
-    desc: "Rachel's passion for sustainable farming led her to introduce innovative agricultural practices in her community. Her efforts have resulted in higher crop yields and reduced environmental impact. Rachel's success has motivated other farmers to adopt similar methods, contributing to a more sustainable and prosperous local economy.",
-    userName: "rachel-garcia",
-    slug: "rachel-sustainable-farming",
+    headline: "Mannat Khunger",
+    desc: "Truly grateful to be part of this insightful workshop. Learning to navigate the Sansad website and understand its structure has been incredibly helpful in deepening my understanding of parliamentary processes!",
+    userName: "mannat-khunger",
+    slug: "https://www.linkedin.com/feed/update/urn:li:ugcPost:7372738244708470784?commentUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7372738244708470784%2C7373320041854881792%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287373320041854881792%2Curn%3Ali%3AugcPost%3A7372738244708470784%29",
     images: [
       {
-        src: StoriesImpactImage,
-      },
-    ],
-  },
-  {
-    headline: "Bridging Cultural Gaps",
-    desc: "Liam's work in promoting cultural understanding through art has brought diverse communities together. His art workshops have become a platform for dialogue and connection, helping to bridge cultural gaps and foster a sense of unity. Liam's efforts have led to stronger community ties and a greater appreciation for cultural diversity.",
-    userName: "liam-evans",
-    slug: "liam-bridging-cultural-gaps",
-    images: [
-      {
-        src: StoriesImpactImage,
-      },
-    ],
-  },
-  {
-    headline: "Championing Women's Rights",
-    desc: "Aisha's advocacy for women's rights has made a significant impact in her community. Through education and activism, Aisha has empowered women to stand up for their rights and take on leadership roles. Her efforts have led to greater gender equality and more opportunities for women in various sectors.",
-    userName: "aisha-khan",
-    slug: "aisha-championing-womens-rights",
-    images: [
-      {
-        src: StoriesImpactImage,
-      },
-    ],
-  },
-  {
-    headline: "Innovating Education",
-    desc: "Michael's innovative approach to education has transformed the learning experience for students in his community. By incorporating technology and personalized learning methods, Michael has increased student engagement and academic performance. His work is now a model for other educators looking to enhance their teaching methods.",
-    userName: "michael-lee",
-    slug: "michael-innovating-education",
-    images: [
-      {
-        src: StoriesImpactImage,
+        src: mannatKhunger,
       },
     ],
   },
