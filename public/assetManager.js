@@ -90,6 +90,7 @@ import jyotsanaSingh from "./assets/about/people/team/jyotsana-singh.jpg";
 import himanshuKumar from "./assets/home/stories-of-impact/himanshu-kumar.jpeg";
 import krishJha from "./assets/home/stories-of-impact/krish-jha.jpeg";
 import hardikaGupta from "./assets/home/stories-of-impact/hardika-gupta.jpeg";
+import mannatKhunger from "./assets/home/stories-of-impact/mannat-khunger.jpg";
 
 import ZeroTol from "./assets/events/past-events/ZeroTol.png";
 import WorkFundamentals from "./assets/events/past-events/WorkFundamentals.png";
@@ -189,6 +190,7 @@ export {
   himanshuKumar,
   krishJha,
   hardikaGupta,
+  mannatKhunger,
   YcprNiti,
   YcprCollab,
   YcprLeg,
