@@ -10,7 +10,6 @@ import {
   pallaviKhusar,
   sakshiSharma,
   srishtistutiRoy,
-  muskanChawda,
   vikalpSharma,
   gauravMehra,
   seliya,
@@ -151,14 +150,6 @@ const yclaTeamData = [
     },
     position: "Member",
     images: [{ src: dishaDubey }],
-  },
-  {
-    name: "Muskan Chawda",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/muskan-chawda-022a6420a/",
-    },
-    position: "Member",
-    images: [{ src: muskanChawda }],
   },
 ];
 
