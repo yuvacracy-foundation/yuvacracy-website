@@ -2,22 +2,14 @@
 import React from "react";
 import SupportLayout from "../Layout";
 import { DonateImg2, DonateUs } from "@/public/assetManager";
-import { BsBarChartLine } from "react-icons/bs";
 import Image from "next/image";
 import SuspenseHandler from "@/utils/SuspenseHandler";
 import ScrollHandler from "@/utils/ScrollHandler";
 import { TbPointFilled } from "react-icons/tb";
 import ImageTextComp1 from "@/components/common/TextComponents/ImageTextComp1";
 import SubHead from "@/components/common/SubHeadings/SubHead";
-
-const data = [
-  {
-    desc: "Every program we run whether it's a research project, legal awareness workshop, policy internship, training session, or community outreach initiative, is made possible solely through our own efforts and personal commitment. We have been sustaining this work independently, without external funding",
-  },
-  {
-    desc: "If you believe in what we do and wish to contribute voluntarily, no matter how big or small the amount, your support would mean a lot. Every contribution helps us continue and expand our impact.",
-  },
-];
+import Link from "next/link";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const donateHelpsUsPoints = [
   {
@@ -52,7 +44,7 @@ const donateHelpsUsPoints = [
   },
   {
     desc: (
-      <div className="flex flex-row">
+      <div className="flex">
         <TbPointFilled className="mt-[0.3rem] mr-2" />
         <span>
           Provide <b>internships, research fellowships</b>, and{" "}
@@ -80,6 +72,7 @@ const Donate = () => {
       <SuspenseHandler>
         <ScrollHandler />
       </SuspenseHandler>
+
       <div className="xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] pt-20 flex flex-col">
         <ImageTextComp1
           title={
@@ -99,7 +92,6 @@ const Donate = () => {
           data={donateHelpsUsPoints}
         />
 
-        {/* Why donate to YuvaCracy Section */}
         <SubHead
           title={"Why Donate to YuvaCracy?"}
           subtitle={
@@ -114,22 +106,24 @@ const Donate = () => {
           }
         />
 
-        <div className="flex flex-col md:flex-row items-center md:h-[42rem] mt-[6rem] md:mt-[12rem]">
-          {/* Image Section */}
-          <Image
-            alt="YuvaCracy is a foundation for youth"
-            className="w-full md:w-[50%] h-[20rem] md:h-[42rem] object-cover"
-            src={DonateImg2}
-          />
+        {/* ✅ FIXED SECTION */}
+        <div className="flex flex-col md:flex-row items-stretch mt-[6rem] md:mt-[12rem]">
+          {/* LEFT IMAGE */}
+          <div className="relative w-full md:w-1/2 h-[20rem] md:h-auto">
+            <Image
+              src={DonateImg2}
+              alt="YuvaCracy is a foundation for youth"
+              fill
+              className="object-cover"
+            />
+          </div>
 
-          {/* Donation Info Section */}
-          <div className="bg-primary overflow-y-auto text-white w-full md:w-[50%] h-full flex flex-col justify-center px-6 py-10 md:px-12 md:py-14">
-            {/* Heading */}
+          {/* RIGHT CONTENT */}
+          <div className="flex flex-col justify-center w-full px-6 py-10 text-white bg-primary md:w-1/2 md:px-12 md:py-14">
             <h2 className="text-3xl font-bold tracking-wide font-montserrat md:text-4xl">
               Call for Donations!
             </h2>
 
-            {/* Description */}
             <div className="mt-6 space-y-4 text-[#E0E0E0] font-montserrat text-sm md:text-base leading-relaxed">
               <p>
                 Every program we run — whether it’s a <b>research project</b>,{" "}
@@ -147,8 +141,7 @@ const Donate = () => {
               </p>
             </div>
 
-            {/* Donation Details Box */}
-            <div className="h-full p-4 mt-8 text-sm border rounded-sm border-white/60 md:p-6 font-montserrat md:text-base">
+            <div className="p-4 mt-8 text-sm border rounded-sm border-white/60 md:p-6 font-montserrat md:text-base">
               <h3 className="mb-4 font-bold tracking-wide text-white">
                 DETAILS FOR DONATION
               </h3>
@@ -169,9 +162,17 @@ const Donate = () => {
                   40631194535
                 </p>
               </div>
+
+              <Link
+                href={"https://razorpay.me/@yuvacracyfoundation"}
+                className="mt-[1rem] bg-white text-primary flex items-center gap-[.3rem] rounded-md font-montserrat font-[600] px-[2.5rem] py-[.5rem] w-fit"
+                target="_blank"
+                rel="nopener noreferrer"
+              >
+                Donate <MdOutlineArrowOutward />
+              </Link>
             </div>
 
-            {/* Footer */}
             <div className="mt-6 text-xs md:text-sm text-[#CFCFCF] font-montserrat">
               <p>
                 For any query, contact{" "}
