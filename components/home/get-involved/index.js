@@ -26,7 +26,7 @@ const HomeGetInvolved = () => {
           <p className=' text-[#DDD] font-openSans line-clamp-4 ' >Your support is vital to our mission. Whether you choose to donate, volunteer, or partner with us, your involvement helps us continue to empower young leaders.</p>
           <Link href={'/get-involved'} className='mt-[3rem] bg-white text-primary flex items-center gap-[.3rem] rounded-md font-montserrat font-[600]  px-[2.5rem] py-[.5rem] w-fit '>Learn More <MdOutlineArrowOutward /> </Link>
         </div>
-
+ 
         <div className='hidden md:block' >
           <Image
             src={GetInvolvedImage}
